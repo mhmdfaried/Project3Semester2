@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "MysticGate";
+  src: url(font/MysticGate-0WnMP.ttf);
+}
+body {
+  background-color: #2c3e50;
+}
+
+.navigasi {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 50px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  letter-spacing: 1px;
+  background-color: #2c3e50;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-family: "MysticGate";
+}
+
+nav ul li a:link {
+  color: aliceblue;
+}
+
+nav ul li a:hover {
+  color: #1abc9c;
+  font-family: "MysticGate";
+}
+
+nav ul li a:active {
+  color: aliceblue;
+}
