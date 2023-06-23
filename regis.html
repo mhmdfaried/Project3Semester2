@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="img/img3.png" />
+    <link rel="stylesheet" href="main2.css" />
+    <title>Project 3 - Group 5</title>
+  </head>
+  <body>
+    <header class="fixed">
+      <nav class="topnav">
+        <div class="logo"><img src="img/img1.png" alt="logo" /></div>
+        <div class="menu" id="myTopnav">
+          <a href="index.html">Beranda</a>
+          <a href="index.html#tentangkami">Tentang Kami</a>
+          <a href="index.html#major">Program Keahlian</a>
+          <a href="index.html#gallery">Galeri</a>
+          <a href="index.html#contact">Kontak Kami</a>
+          <a href="regis.html">Pendaftaran</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="container">
+        <div class="header-home">
+          <div class="regis-form">
+            <h1>PENDAFTARAN</h1>
+            <form method="post" role="form" action="index.html">
+              <div class="form-group">
+                <br />
+                <label>Nama Lengkap : </label>
+                <br />
+                <input
+                  type="text"
+                  id="namalengkap"
+                  name="namalengkap"
+                  autofocus
+                  required=""
+                  placeholder="Isi Nama Lengkap Anda."
+                  class="form-control"
+                />
+                <br />
+                <label>Tempat Lahir : </label>
+                <br />
+                <input
+                  type="text"
+                  name="tempatlahir"
+                  required=""
+                  placeholder="Isi Tempat Lahir Anda."
+                  class="form-control"
+                />
+                <br />
+                <label>Tanggal Lahir : </label>
+                <br />
+                <input
+                  type="date"
+                  name="tanggallahir"
+                  required=""
+                  placeholder="Isi Tanggal Lahir Anda."
+                  class="form-control"
+                />
+                <br />
+                <label>Alamat : </label>
+                <br />
+                <input
+                  type="text"
+                  name="alamat"
+                  required=""
+                  placeholder="Isi Alamat Lengkap Anda."
+                  class="form-control"
+                />
+                <br />
+                <label>Email : </label>
+                <br />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Isi Email Anda."
+                  class="form-control"
+                />
+                <br />
+                <label>Nomor HP : </label>
+                <br />
+                <input
+                  type="text"
+                  name="nomorhp"
+                  required=""
+                  placeholder="Isi Nomor HP Anda."
+                  class="form-control"
+                />
+                <br />
+                <label>Asal Sekolah : </label>
+                <br />
+                <input
+                  type="text"
+                  name="asalsekolah"
+                  required=""
+                  placeholder="Isi Asal Sekolah Anda."
+                  class="form-control"
+                />
+              </div>
+              <br />
+              <br />
+              <div class="btn-primary">
+                <a href="index.html">Batalkan</a>
+                <button type="submit" onclick="validateForm()">Simpan</button>
+                <p id="demo"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <div class="footer">
+    <footer>
+      <p>Copyright &copy; Project 3 - Group 5 2023</p>
+    </footer>
+  </div>
+  <script src="script.js" lang="javascript"></script>
+</html>

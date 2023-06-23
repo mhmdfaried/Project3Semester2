@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:wght@300&display=swap");
+
+@font-face {
+  font-family: "MysticGate";
+  src: url(font/MysticGate-0WnMP.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #0a4d68, #088395, #05bfdb);
+}
+
+/* navbar */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.topnav {
+  background-color: #2c3e50;
+  position: relative;
+  padding: 15px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: 10px;
+}
+.logo img {
+  width: 80px;
+}
+.menu {
+  overflow: hidden;
+  background-color: #2c3e50;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "Poppins";
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  background-color: #4e6483;
+  /* color: #4e6483; */
+  font-family: "Poppins";
+}
+
+.menu .icon {
+  display: none;
+}
+
+/* home */
+
+.container {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: #0a4d68;
+  background-image: linear-gradient(
+      rgba(44, 62, 80, 0.6),
+      rgba(248, 241, 234, 0.33)
+    ),
+    url("img/img2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-home {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 256px;
+}
+
+.text-header h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #2c3e50;
+  font-family: "MysticGate";
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 white, 2px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.text-header p {
+  font-family: "MysticGate";
+  color: aliceblue;
+  text-align: center;
+  font-size: 12px;
+  color: aliceblue;
+}
+
+.header-kami h1,
+.our-major h1,
+.our-gallery h1 {
+  font-family: "MysticGate";
+  color: #2c3e50;
+  margin-top: 1rem;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+.deskripsi-kami {
+  list-style-type: none;
+  color: aliceblue;
+  font-family: "Poppins";
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  text-align: justify;
+}
+
+/* Major */
+.our-major {
+  margin-top: -50px;
+}
+
+.deskripsi-major {
+  list-style-type: none;
+  color: aliceblue;
+  font-family: "Poppins";
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  text-align: justify;
+}
+
+.grid-container {
+  display: block;
+}
+
+.slideshow-container {
+  margin-top: 20px;
+}
+
+.our-gallery {
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+  z-index: -1;
+  position: relative;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* contact */
+
+.contact-us h1 {
+  font-family: "MysticGate";
+  color: #2c3e50;
+  font-size: 20px;
+  text-align: left;
+  /* padding-left: 48px;
+  padding-right: 10px; */
+  /* margin-top: 20px;
+  margin-left: 50px; */
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.deskripsi-contact {
+  list-style-type: none;
+  color: aliceblue;
+  font-family: "Poppins";
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.deskripsi-contact ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.deskripsi-contact ul li a {
+  color: aliceblue;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+
+.deskripsi-contact ul li a:hover {
+  color: #2c3e50;
+  font-family: "Poppins";
+}
+
+.maps {
+  width: 70%;
+  height: 210px;
+  /* height: 100%; */
+  padding-top: 5px;
+  padding-left: 48px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+/* footer */
+.footer {
+  background-color: #2c3e50;
+  line-height: 40px;
+  color: aliceblue;
+  text-align: center;
+  font-family: "MysticGate";
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu a {
+    display: none;
+  }
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+  .menu.responsive {
+    position: relative;
+  }
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    position: static;
+    transform: translate(0, 0);
+  }
+  .video {
+    width: 512px;
+    height: 270px;
+  }
+
+  .header-home {
+    height: 400px;
+  }
+
+  .header-kami h1,
+  .our-major h1,
+  .our-gallery h1 {
+    margin-top: 1rem;
+    font-size: 32px;
+  }
+
+  .text-header h1 {
+    font-size: 32px;
+  }
+
+  .text-header p {
+    font-size: 18px;
+  }
+
+  .deskripsi-kami,
+  .deskripsi-major {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .our-gallery {
+    width: 90%;
+  }
+  /* .contact-us {
+    padding-top: 20px;
+    padding-left: 60%;
+    padding-right: 1%;
+    padding-bottom: 20px;
+  } */
+
+  .contact-us h1 {
+    font-size: 28px;
+  }
+  .deskripsi-contact {
+    font-size: 12px;
+  }
+
+  .maps {
+    width: 70%;
+    height: 260px;
+  }
+
+  /* .grid-column-contact {
+    display: grid;
+    grid-template-areas:
+      "h1 iframe"
+      "h2  iframe";
+    grid-template-columns: 150px 1fr;
+    gap: 5rem;
+    padding-right: 80px;
+  } */
+
+  .grid-column-contact {
+    display: flex;
+    flex: 1 1;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 50px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 10px;
+  }
+  .menu a:hover {
+    background-color: #2c3e50;
+    color: #4e6483;
+  }
+
+  .topnav {
+    height: 60px;
+  }
+
+  .video {
+    width: 560px;
+    height: 315px;
+  }
+
+  .container {
+    margin-top: 60px;
+  }
+
+  .header-home {
+    height: 100vh;
+    gap: 3rem;
+  }
+
+  .text-header h1 {
+    font-size: 48px;
+  }
+
+  .header-kami h1 {
+    margin-top: 3rem;
+    font-size: 48px;
+  }
+
+  .deskripsi-kami {
+    padding: 30px 100px 0px 100px;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 5rem;
+  }
+
+  .our-major h1 {
+    /* margin-top: 3rem; */
+    font-size: 48px;
+  }
+  .grid-column-major {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .deskripsi-major {
+    font-size: 20px;
+  }
+
+  .our-major {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .container-major h2 {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .container-major {
+    /* width: 200px; */
+    background-color: #2c3e50;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    border-radius: 1rem;
+    transition: transform 0.5s;
+  }
+  .container-major:hover {
+    translate: transform scale (1.1);
+  }
+  .our-gallery h1 {
+    /* margin-top: 3rem; */
+    font-size: 48px;
+  }
+  .our-gallery {
+    width: 90%;
+  }
+  /* .our-gallery {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    margin-left: 330px;
+  }
+
+  .our-gallery h1 {
+    margin-top: 3rem;
+    font-size: 48px;
+  } */
+
+  .contact-us h1 {
+    letter-spacing: 5px;
+    /* margin-left: 60px; */
+  }
+  .deskripsi-contact {
+    font-size: 20px;
+    padding: 30px 60px 0px 60px;
+
+    /* padding: 0px 130px; */
+    margin-left: 10px;
+  }
+
+  .maps {
+    width: 700px;
+    height: 400px;
+  }
+  .grid-column-contact {
+    display: flex;
+    flex: 1 1;
+    padding-top: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 80px;
+    align-items: center;
+  }
+}

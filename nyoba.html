@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>
+          Demonz Football Club, <br />
+          Gedung Enginering Center FTUI Kampus Baru UI Depok, Jl. Prof. DR. Ir
+          R. Roosseno, Depok, Jawa Barat 16425 <br />
+          <span style="font-weight: bold">Phone:</span> +62 813 1048 2260<br />
+          <span style="font-weight: bold">Email:</span> info@demonzfc.id
+        </p>
+        <br />
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <input
+            class="nameAlert"
+            type="text"
+            placeholder="Your Name"
+            autofocus
+            required
+          />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button onclick="confirmSendMessage()" type="submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    function confirmSendMessage(event) {
+      event.preventDefault(); // Menghentikan pengiriman form secara langsung
+
+      var namanya = document.getElementsByClassName("nameAlert")[0].value;
+      var confirmation = confirm("Apakah Anda ingin mengirimkan pesan ini?");
+
+      if (confirmation) {
+        viewAlert(namanya);
+        resetForm();
+      } else {
+        resetForm();
+      }
+    }
+
+    function viewAlert() {
+      var namanya = document.getElementsByClassName("nameAlert")[0].value;
+      alert("Terima Kasih " + namanya + " !1!1!");
+    }
+
+    function resetForm() {
+      document.getElementsByClassName("nameAlert")[0].value = "";
+      document.querySelector('input[type="email"]').value = "";
+      document.querySelector("textarea").value = "";
+    }
+  </script>
+</html>
